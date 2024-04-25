@@ -11,7 +11,7 @@ public class Game : MonoBehaviour
     int _score = 0;
     int _scoreMultiplier = 1;
 
-    private void Awake()
+    void Awake()
     {
         _score = PlayerPrefs.GetInt("Score", 0);
         UpdateScore();
